@@ -10,7 +10,7 @@ struct Student{
 	string name;
 	int    score;
 
-	// 重定义 < ,用于 Student 之间的比较
+	// 重载 < ,用于 Student 之间的比较
 	// 如果 score 相等，则比较 name 的字符顺序
 	// 如果 score 不相等，则 score 大的靠前
 	bool operator<(const Student& otherStudent) {
